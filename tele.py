@@ -6,7 +6,7 @@ import google.genai as genai
 import concurrent.futures
 
 # Set your Gemini API key (set GEMINI_API_KEY or GOOGLE_API_KEY as env var, or pass here)
-client = genai.Client(api_key="GEMINI_API_KEY")
+client = genai.Client(api_key="AIzaSyDvw7ggginYBg1LmsQ6ejWncvgjuR8bmMI")
 
 def gemini_chat(prompt):
     try:
@@ -62,7 +62,7 @@ async def social_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
 def main():
-    app = ApplicationBuilder().token("BOT_TOKEN").build()
+    app = ApplicationBuilder().token("7727577357:AAEtS9yPRfKL7F8NWNOBTzjIcDPqBeFXG6Q").build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(CommandHandler("social", social_command))
@@ -71,5 +71,5 @@ def main():
     print("Bot is running...")
     app.run_polling()
 
-if __name__ == "__main__":
+if name == "main":
     main()
